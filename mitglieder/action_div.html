@@ -1,0 +1,156 @@
+<div class="edit_main" id="edit_main">
+    <h2>Jonathan Keller (L00001) Bearbeiten</h2>
+    <form id="edit_form">
+        <ul class="edit_select" id="edit_select">
+            <li class="li selected" id="person">Person</li>
+            <li class="li" id="kp_person">Kontaktperson</li>
+            <li class="li" id="wohnort">Wohnort</li>
+            <li class="li" id="bemerkungen">Bemerkungen</li>
+            <li class="li" id="berechtigungen">Berechtigungen</li>
+            <li class="li" id="bild">Bild</li>
+        </ul>
+        <div id="edit_person">
+            <h3>Person</h3>
+            <div class="row">
+                <div class="input_label_div">
+                    <input type="text" name="firstname" id="firstname" class="text_input" placeholder="Nachname"
+                        value="Jonathan">
+                    <label for="firstname">Vorname</label>
+                </div>
+                <div class="input_label_div">
+                    <input type="text" name="lastname" id="lastname" class="text_input" placeholder="Nachname"
+                        value="Keller">
+                    <label for="lastname">Nachname</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input_label_div">
+                    <input type="date" name="birthday" id="birthday" class="text_input" placeholder="Geburtstag"
+                        value="2007-09-11">
+                    <label for="birthday">Geburtstag</label>
+                </div>
+                <div class="input_label_div">
+                    <select name="type" id="type">
+                        <option value="leiter" selected>Leiter</option>
+                        <option value="al">As-Leiter</option>
+                        <option value="mitglied">Mitglied</option>
+                    </select>
+                    <label for="type">Type</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input_label_div">
+                    <select name="group" id="group">
+                        <option value="SA-T1-B" selected>SA-T1-B</option>
+                        <option value="SA-T2-A">SA-T2-A</option>
+                        <option value="SA-T2-B">SA-T2-B</option>
+                    </select>
+                    <label for="group">Gruppe</label>
+                </div>
+            </div>
+        </div>
+
+        <div id="edit_wohnort">
+            <h3>Wohnort</h3>
+            <div class="row">
+                <div class="input_label_div">
+                    <input type="text" name="street" id="street" class="text_input" placeholder="Strasse"
+                        value="Musterstrasse 1">
+                    <label for="street">Strasse</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input_label_div">
+                    <input type="text" name="zip" id="zip" class="text_input" placeholder="PLZ" value="3000">
+                    <label for="zip">PLZ</label>
+                </div>
+                <div class="input_label_div">
+                    <input type="text" name="city" id="city" class="text_input" placeholder="Wohnort" value="Bern">
+                    <label for="city">Wohnort</label>
+                </div>
+            </div>
+        </div>
+
+        <div id="edit_kontaktperson">
+            <h3>Kontaktperson</h3>
+            <div class="row">
+                <div class="input_label_div">
+                    <input type="text" name="contact_name" id="contact_name" class="text_input"
+                        placeholder="Kontakt Name" value="Jonathan Keller">
+                    <label for="contact_name">Kontakt Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input_label_div">
+                    <input type="tel" name="contact_tel" id="contact_tel" class="text_input" placeholder="Kontakt Tel."
+                        value="076 680 93 24">
+                    <label for="contact_tel">Kontakt Tel.</label>
+                </div>
+                <div class="input_label_div">
+                    <input type="email" name="contact_email" id="contact_email" class="text_input"
+                        placeholder="Kontakt Email" value="">
+                    <label for="contact_email">Kontakt Email</label>
+                </div>
+            </div>
+        </div>
+        <div id="edit_bemerkungen">
+            <h3>Bemerkungen</h3>
+            <textarea name="remarks" id="remarks" class="edit_textarea" placeholder="Bemerkungen"></textarea>
+        </div>
+        <div id="edit_berechtigungen"></div>
+
+        <div id="edit_bild">
+            <div class="split_bild_div">
+                <div class="person">
+                    <img src="/img/persons/person.png" alt="" class="person_img">
+                    <p class="person_description">Automatiker-Lehrling der SBB</p>
+                    <p class="person_name">Joni</p>
+                </div>
+                <input type="range" name="position_y" id="position_y" min="0" max="100">
+                <div class="bild_inputs_div">
+                    <div class="input_label_div">
+                        <input type="file" name="bild" id="bild" class="file_input">
+                        <label for="bild">Bild hochladen</label>
+                    </div>
+                </div>
+            </div>
+            <input type="range" name="position_x" id="position_x" min="0" max="100">
+            <div class="input_zoom_div">
+                <label for="zoom" class="zoom_label">Zoom</label>
+                <input type="number" name="zoom" id="zoom" value="1" step="0.1" class="zoom_input">
+            </div>
+        </div>
+
+
+        <button type="submit" class="regular_button_dark">Speichern</button>
+    </form>
+</div>
+<div class="delete_div" id="delete_main">
+    <h2 id="delete_titel">Jonathan Keller (L00001) </h2>
+    <p class="delete_text" id="delete_text">Bist du sicher, dass du Jonathan Keller (L00001) </p>
+    <button class="regular_button_dark" id="delete_confirm">Ja, löschen</button>
+</div>
+<div class="group_div" id="group_main">
+    <h2>Gruppe ändern</h2>
+    <select name="group" id="group">
+        <option value="SA-T1-B">SA-T2-B</option>
+        <option value="SA-T2-B">SA-T1-B</option>
+        <option value="DI-T1-S">DI-T1-S</option>
+    </select>
+    <button class="regular_button_dark" id="group_confirm">ändern</button>
+</div>
+<div class="type_div" id="type_main">
+    <h2>Type ändern</h2>
+    <select name="group" id="group">
+        <option value="Leiter">Leiter</option>
+        <option value="AS">As-Leiter</option>
+        <option value="Teilnehmer">Teilnehmer</option>
+        <option value="Ehemalig">Ehemalig</option>
+    </select>
+    <button class="regular_button_dark" id="group_confirm">ändern</button>
+</div>
+<div class="type_div" id="simulation_main">
+    <h2>nicht verfügbahr</h2>
+    <p class="delete_text">Die Simulation ist zur Zeit nicht verfügbahr.</p>
+</div>
+<script src="/js/action_div.js"></script>

@@ -1,0 +1,101 @@
+.gruppen_main_div{
+    display: flex;
+}
+.gruppen_div{
+    background-color: var(--light_gray);
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.gruppen_div .titel_split_div{
+    display: flex;
+    justify-content: space-between;
+}
+.gruppen_div h2{
+    margin: 0;
+}
+.gruppen_div h3{
+    margin: 0;
+    color: var(--dark_gray);
+}
+.gruppen_typ{
+    background-color: var(--light_green);
+    color: var(--dark_green);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.gruppen_short_name{
+    background-color: var(--mid_gray);
+    color: var(--dark_gray);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    height: 40px;
+    width: auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.gruppen_text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.buttons_div{
+    display: flex;
+    gap: 10px;
+}
+.delete_button{
+    background-color: var(--light_red);
+    color: var(--dark_red);
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delete_button:hover{
+    cursor: pointer;
+    background-color: var(--light_red_hover);
+}
+.delete_button span {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 35
+}
+.gruppen_header{
+    display: flex;
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+    width: 100%;
+    border-bottom: 1px solid var(--mid_gray);
+}
+.gruppen_header .add_div{
+    height: 40px;
+    width: auto;
+    padding: 0 10px;
+    background-color: var(--light_gray);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0 0 0 20px;
+    transition: background-color 200ms ease-in-out;
+}
+.gruppen_header .add_div:hover{
+    cursor: pointer;
+    background-color: var(--mid_gray);
+}

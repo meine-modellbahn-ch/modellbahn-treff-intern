@@ -1,0 +1,179 @@
+.action_div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    display: none;
+}
+.edit_main{
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 1000px;
+    height: 80%;
+    max-height: 900px;
+    display: none;
+    flex-direction: column;
+    overflow-y: auto;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.edit_main h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+#edit_form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+#edit_person{
+    height: 100%;
+}
+#edit_wohnort, #edit_kontaktperson, #edit_bemerkungen, #edit_berechtigungen, #edit_bild{
+    display: none;
+    height: 100%;
+}
+.edit_select{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+.edit_select li{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: var(--mid_gray);
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+.edit_select li:hover{
+    background-color: var(--dark_blue_light);
+    color: white;
+}
+.selected{
+    background-color: var(--dark_blue_light) !important;
+    color: white;
+}
+#edit_bemerkungen{
+    flex-direction: column;
+    height: 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.edit_textarea{
+    width: 100%;
+    max-height: 370px;
+    height: 100%;
+    margin: 0 0 20px 0;
+}
+.delete_div, .group_div, .type_div{
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    justify-content: flex-start;
+    align-items: stretch;
+    display: none;
+}
+.delete_text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.delete_div h2, .group_div h2, .type_div h2{
+    margin: 0;
+}
+.group_div select, .type_div select{
+    margin: 20px 0;
+}
+
+.person{
+    width: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--dark_blue_50);
+}
+.person_img{
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 100%;
+}
+.person_description{
+    position: absolute;
+    padding: 0 20px;
+    margin: -50px 0 10px 0;
+    height: 50px;
+    width: 210px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.person_name{
+    width: 210px;
+    margin: 10px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
+.split_bild_div{
+    display: flex;
+    justify-content: flex-start;
+    height: min-content;
+    margin: 20px 0 0 0;
+}
+#position_x{
+    margin: 0;
+    width: 235px !important;
+}
+.split_bild_div #position_y{
+    writing-mode: vertical-lr; /* vertikal von unten nach oben */
+    width: 8px;
+    height: 350px;
+}
+.bild_inputs_div{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+.input_zoom_div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.zoom_input{
+    font-size: 16px;
+    width: 50px;
+}
+.zoom_label{
+    font-size: 16px;
+}

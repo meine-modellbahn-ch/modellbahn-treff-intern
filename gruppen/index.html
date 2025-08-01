@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modellbahn-Treff for Kids</title>
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/gruppen.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <header id="header"></header>
+    <script>$("#header").load("/header.html");</script>
+    <main>
+        <h1>Gruppen</h1>
+        <div class="gruppen_header">
+            <input type="text" name="search" id="search" placeholder="Gruppe suchen">
+            <div class="add_div">
+                <span class="material-symbols-outlined">add</span>
+                Gruppe hinzufügen
+            </div>
+        </div>
+        <div class="gruppen_main_div">
+            <div class="gruppen_div">
+                <div class="titel_split_div">
+                    <div>
+                        <h2>Samstag</h2>
+                        <h3>Team 1</h3>
+                    </div>
+                    <span class="gruppen_short_name">SA-T1-B</span>
+                    <span class="gruppen_typ">B</span>
+                </div>
+                <p class="gruppen_text">Kinder: 5</p>
+                <div class="buttons_div">
+                    <button class="regular_button_dark">Bearbeiten</button>
+                    <div class="delete_button"><span class="material-symbols-outlined">delete_forever</span></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+    <script>$("#footer").load("/footer.html");</script>
+</body>
+</html>
